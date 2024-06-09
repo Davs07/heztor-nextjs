@@ -41,16 +41,14 @@ export default function Navbar() {
                   key={index}
                   variant="ghost"
                   size="sm"
-                  className={`group hover:bg-[#E6ECFF] rounded-xl ${
+                  className={`group rounded-xl ${
                     pathname.indexOf(Menu.source) === 0
-                      ? "  text-white hover:text-white bg-main-2 hover:bg-main-2 "
+                      ? "bg-accent text-blue-950 "
                       : ""
                   }   text-sm `}>
                   <span
                     className={`text-lg hover:text-main-2 ${
-                      pathname.indexOf(Menu.source) === 0
-                        ? "group-hover:text-white text-white"
-                        : ""
+                      pathname.indexOf(Menu.source) === 0 ? "" : ""
                     }`}>
                     {Menu.icon}
                   </span>

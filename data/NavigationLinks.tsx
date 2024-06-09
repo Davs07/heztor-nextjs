@@ -14,7 +14,7 @@ export interface navigationType {
   title: string;
   src: string;
   source: string;
-  icon: ReactElement;
+  icon: JSX.Element;
 }
 
 export const navigationLinks: navigationType[] = [
