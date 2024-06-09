@@ -2,12 +2,22 @@ import {
   FolderKanban,
   FolderPen,
   Home,
+  IconNode,
+  Icon,
   Pen,
   SquareCheck,
   WalletMinimal,
 } from "lucide-react";
+import { ReactElement } from "react";
 
-export const navigationLinks = [
+export interface navigationType {
+  title: string;
+  src: string;
+  source: string;
+  icon: ReactElement;
+}
+
+export const navigationLinks: navigationType[] = [
   {
     title: "Vista General",
     src: "/dashboard",
@@ -16,7 +26,7 @@ export const navigationLinks = [
   },
   {
     title: "Hábitos",
-    src: "/habits/day",
+    src: "/habits",
     source: "/habits",
     icon: <SquareCheck size={18} />,
   },
@@ -45,5 +55,3 @@ export const navigationLinks = [
     icon: <WalletMinimal size={18} />,
   },
 ];
-
-
