@@ -12,7 +12,7 @@ import Logo from "./logo";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Languages } from "lucide-react";
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignUp, SignUpButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 // import { ModeToggle } from "@/components/micro/mode-toggle";
 
@@ -73,6 +73,10 @@ export const Navbar = () => {
               Inicia Sesión
             </Button>
           </SignInButton>
+
+          <SignUpButton >
+            Registrarse
+          </SignUpButton>
         </SignedOut>
         <SignedIn>
           <UserButton />
