@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react';
-import useHabitsStore from '@/api/stores/habitStore';
+import {useHabitsStore} from '@/api/stores/habitStore';
 
 const HabitsList: React.FC = () => {
   const habits = useHabitsStore((state) => state.habits);

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import useHabitsStore from "@/api/stores/habitStore";
+import {useHabitsStore} from "@/api/stores/habitStore";
 
 const CreateHabit: React.FC = () => {
   const [name, setName] = useState("");
